@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    /*box-sizing: border-box;*/
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*default css*/
+.container{
+    width: 1140px;
+    margin: auto;
+}
+.container-full{
+    width: 98%;
+    margin: auto;
+}
+.clear{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+/*header*/
+
+.header-area{
+    background-color: #1228ee;
+    
+}
+.nav{
+    height: 70px;
+}
+.nav-logo{
+float: left;
+}
+.nav-logo img {
+    width: 20%;
+    padding: 5px 10px;
+    border-radius: 40%;
+} 
+.main-menu{
+float: right;
+}
+/*.main-menu ul{}*/
+.main-menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.main-menu ul li a{
+    padding: 25px 0;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    text-transform: capitalize;
+    position: relative;
+}
+.main-menu ul li a::before{
+    content: "";
+    position: absolute;
+    background: #ff5321;
+    height: 2px;
+    bottom: 15px;
+}
+.main-menu ul li a:hover::before{
+    width: 100%;
+    transition: 0.4s;
+}
+
+/*home*/
+
+.home-area{
+    background-image: url(../images/background.jpeg);
+    height: 600px;
+    background-size: cover;  
+}
+.dark-overlay{
+    background-color: rgba(0, 0, 0, .7);
+    height: 600px;
+}
+.home-content{
+    text-align: center;
+    padding-top: 210px;
+}
+/*.home-text{}*/
+.home-text h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.home-text h1{
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 15px
+}
+.home-text h1 span{
+    color: #00a2de;
+}
+.home-btn{
+    padding-top: 30px;
+}
+.home-btn a:first-child{
+    background-color: cornflowerblue;
+    transition: .3s;
+    margin-right: 15px;
+}
+.home-btn a:hover{
+    background-color: #ff5321;
+}
+.home-btn a {
+    color: #fff;
+    background: #4c8ae7;
+    padding: 12px 20px;
+    font-size: 15px;
+}
+
+/*Card area*/
+.card-area{
+
+    margin: 2%;
+    background-color: #00a2de;
+   }
+   
+   .card{
+        width: 20%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px; 
+        margin: 2%;
+        background-color: aqua;
+       }
+    .card:hover{
+        box-shadow: 2px 2px 20px rgb(234, 237, 238);
+    }
+   
+   .image img{
+     width: 100%;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px
+    }
+   
+   .title{
+    
+     text-align: center;
+     padding: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     
+    }
+   
+   h1{
+     font-size: 15px;
+    }
+   
+   .des{
+     padding: 3px;
+     text-align: center;
+    
+     padding-top: 10px;
+           border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+   }
+   button{
+     margin-top: 40px;
+     margin-bottom: 10px;
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 5px;
+     padding:10px;
+   }
+   button:hover{
+     background-color: black;
+     color: white;
+     transition: .5s;
+     cursor: pointer;
+   }
+
+   /*footer*/
+.footer-area{
+    background:rgb(8, 12, 233);
+    padding: 30px 0;
+    margin-top: 20px;
+}
+/*.foooter-text{}*/
+.footer-text p{
+    text-align: center;
+    color: rgb(229, 229, 240);
+    font-size: 19px;
+}
+.footer-icon{
+    text-align: center;
+}
+.footer-icon ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-icon ul li a{
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding-top: 10px ;
+}
+.footer-icon ul li a:hover{
+    color: #ff5321;
+}
+.footer-links{
+    text-align: left;
+    font-size: 19px;
+}
+.footer-links{
+    text-align: left;
+}
+.footer-links ul li{
+    display: inline-block;
+    margin-left: 10px;
+    text-transform:capitalize;
+    text-decoration: none;      
+}
+.footer-links ul li a{
+    color: rgb(227, 227, 235);
+    display: block;
+}
+.footer-links ul li a:hover{
+    background-color: #ff5321;
+}
+
+/*Responsive*/
+/*normal desktop:992px.*/
+@media(min-width:992px) and ( max-width:1200px){
+    .container{
+        width: 100%;
+    }
+    .nav-logo img {
+        width: 20%;
+        padding: 5px 10px;
+        border-radius: 40%;
+    } 
+}
+/*Tablet desktop:768px.*/
+@media(min-width:768px) and ( max-width:991px){
+    .container{
+        width: 740px;
+        margin: auto;
+    }
+    .home-text h2{
+        font-size: 35px;
+    }
+    .home-text h1{
+        font-size: 43px;
+    }
+    .home-area{
+        height: 500px;
+    }
+    .dark-overlay{
+        height: 500px;
+    }
+    .home-content{
+        padding-top: 150px;
+    }
+    
+
+}
