@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo2.png">
+    <title>Feedback Registration </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/registration.css">
+</head>
+
+<body>
+    <!--Header and Navigation bar-->
+
+    <header>
+        <div class="header-area">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav-logo">
+                        <img src="./images/logo2.png" alt="error">
+                    </div>
+                    <div class="main-menu ">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="">Feedback</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">sign-in</a></li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Registration Section-->
+    <section class="regist-area">
+        <div class="container">
+            <div class="regist-box">
+                <h1>Feedback Registration</h1>
+                <h2> Name </h2>
+                <input type="text" name="firstname" value="firstname" onFocus="field_focus(this, 'fristname');"
+                    onblur="field_blur(this, 'fristname');" class="name" />
+                <input type="text" name="lastname" value="lastname" onFocus="field_focus(this, 'lastname');"
+                    onblur="field_blur(this, 'lastname');" class="name" />
+                <h2>Email</h2>
+                <input type="email" name="email" value="email" onFocus="field_focus(this, 'email');"
+                    onblur="field_blur(this, 'email');" class="email" />
+
+                <h2>Password</h2>
+                <input type="password" name="password" value="password" onFocus="field_focus(this, 'password');"
+                    onblur="field_blur(this, 'password');" class="password" />
+                <h2>Re-type Password </h2>
+                <input type="password" placeholder="Retype Password" name="psw-repeat" required class="re-password">
+
+                <h2> Phone : </h2>
+                <input type="text" name="country code" placeholder="Country Code" value="+91" size="2" / class="phone">
+                <input type="text" name="phone" placeholder="phone no." size="10" / required class="phone">
+                <h2>Gender :</h2>
+                <input type="radio" value="Male" name="gender" checked class="g"> Male
+                <input type="radio" value="Female" name="gender" class="g"> Female
+                <br>
+                <button type="submit" class="registerbtn">Register</button>
+
+            </div> <!-- End Box -->
+
+
+            </form>
+
+
+        </div>
+    </section>
+
+
+    <!--Footer part -->
+    <footer>
+        <div class="footer-area clear">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-text">
+                        <p>Copyright by Koustav</p>
+                    </div>
+
+                </div>
+                <div class="footer-icon">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-official"></i>
+                            </a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i>
+                            </a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i>
+                            </a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i>
+                            </a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i>
+                            </a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">Tastimonial</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
